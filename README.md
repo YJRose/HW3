@@ -35,7 +35,7 @@ The following image shows the web application's appearance and functionality:
 
 ![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
 
-## Deployed link: 
+## Deployed link: https://yjrose.github.io/HW3/
 
 ---
 © 2023 YJLin Bootcamp Challenge accepted! 👓
