@@ -11,12 +11,20 @@ function writePassword() {
     var isallupperletters = window.prompt("do you want your password with all upper letters? y or n");
     var isallspcialchars = window.prompt("do you want your password with all special charactors? y or n");
 
+//Convert to lowercase to make comparisons easier
+    isallNumrequire = isallNumrequire.toLowerCase();
+    isalllowerletters = isalllowerletters.toLowerCase();
+    isallupperletters = isallupperletters.toLowerCase();
+    isallspcialchars = isallspcialchars.toLowerCase();
+
+
     if (x < 8 || x > 14) {
 
         window.alert("please try again and pick from your password length from 8 to 14.");
-
+    
 
     } else if (isallNumrequire === 'y' && x > 7 && x < 15) {
+
         // random numbers
         var password = Math.random().toString().substr(2, x);
         var passwordText = document.querySelector("#password");
