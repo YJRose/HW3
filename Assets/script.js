@@ -17,14 +17,16 @@ function writePassword() {
 
 
     } else if (isallNumrequire === 'y' && x > 7 && x < 15) {
-
+        // random numbers
         var password = Math.random().toString().substr(2, x);
         var passwordText = document.querySelector("#password");
         passwordText.value = password;
 
     } else if (isalllowerletters === 'y' && x > 7 && x < 15) {
-
+        // Declare all characters as lower letters
         let chars = 'abcdefghijklmnopqrstuvwxyz';
+    
+        // Pick characers randomly
         let str = '';
         let length = x;
         for (let i = 0; i < length; i++) {
@@ -38,8 +40,10 @@ function writePassword() {
         passwordText.value = password;
 
     } else if (isallupperletters === 'y' && x > 7 && x < 15 ) {
-
+        // Declare all characters as upper letters
         let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // Pick characers randomly
         let str0 = '';
         let length = x;
         for (let i = 0; i < length; i++) {
@@ -52,8 +56,10 @@ function writePassword() {
         var passwordText = document.querySelector("#password");
         passwordText.value = password;
     }else if (isallspcialchars === 'y' && x > 7 && x < 15 ) {
-
+        // Declare all characters as special charactors
         let chars1 = '~!@#$%^&*+:<>?';
+
+         // Pick characers randomly
         let str1 = '';
         let length = x;
         for (let i = 0; i < length; i++) {
